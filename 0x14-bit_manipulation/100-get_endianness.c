@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 
 /**
  * get_endianness - checks if a machine is little or big endian
@@ -7,8 +7,8 @@ include "main.h"
 int get_endianness(void)
 {
 	unsigned int i = 1;
-	char *j = (char *) &i;
+	char *c = (char *) &i;
 
-	return (*j);
+	return (*c);
 }
 
